@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TGSRTC General Bus Pass - Fresh</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;">
+
+  <h2 style="text-align: center;">TGSRTC General Bus Pass Application (Fresh)</h2>
+
+  <form action="#" method="post" enctype="multipart/form-data" style="background-color: white; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #ccc; border-radius: 8px;">
+
+    <label>Full Name:</label><br>
+    <input type="text" name="fullname" required style="width: 100%; padding: 5px;"><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob" required style="width: 100%; padding: 5px;"><br><br>
+
+    <label>Gender:</label><br>
+    <select name="gender" required style="width: 100%; padding: 5px;">
+      <option value="">--Select--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+
+    <label>Aadhaar Number:</label><br>
+    <input type="text" name="aadhar" maxlength="12" required style="width: 100%; padding: 5px;"><br><br>
+
+    <label>Mobile Number:</label><br>
+    <input type="tel" name="mobile" pattern="[0-9]{10}" required style="width: 100%; padding: 5px;"><br><br>
+
+    <label>Email ID:</label><br>
+    <input type="email" name="email" style="width: 100%; padding: 5px;"><br><br>
+
+    <label>Residential Address:</label><br>
+    <input type="text" name="address" required style="width: 100%; padding: 5px;"><br><br>
+
+    <label>District:</label><br>
+    <select name="district" required style="width: 100%; padding: 5px;">
+      <option value="">--Select--</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Ranga Reddy">Ranga Reddy</option>
+      <option value="Medchal">Medchal</option>
+    </select><br><br>
+
+    <label>Mandal:</label><br>
+    <input type="text" name="mandal" style="width: 100%; padding: 5px;"><br><br>
+
+    <label>Upload Passport Size Photo:</label><br>
+    <input type="file" name="photo" accept="image/*"><br><br>
+
+    <label>Upload ID Proof (PDF/JPG/PNG):</label><br>
+    <input type="file" name="idproof" accept=".pdf,.jpg,.jpeg,.png"><br><br>
+
+    <input type="submit" value="Submit Application" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">
+  </form>
+
+</body>
+</html>
