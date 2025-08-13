@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 500px;
+            display:flex;
+            background-color: darkslategrey;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .upper{
+            height: 200px;
+            width: 200px;
+            border-radius: 60%;
+            background-color: grey;
+            position: absolute;
+
+            z-index: 10;
+
+        }
+        .lower{
+            height: 200px;
+            width: 200px;
+            border-radius: 61.5%;
+            background-color: whitesmoke;
+            position: absolute;
+
+            z-index: -10;
+            animation:shade 5s  ease infinite alternate  ;
+
+        }
+
+        @keyframes shade {
+            from{
+            height: 250px;
+            width: 250px;
+            border-radius: 65%;
+
+            }
+            /* 10%{
+            height: 200px;
+            width: 200px;
+            border-radius: 60%;
+            top:415px;
+            left:665px;
+            }
+
+            15%{
+            height: 200px;
+            width: 200px;
+            border-radius: 60%;
+            top:420px;
+            left:670px;
+
+            } */
+            to{
+            height: 200px;
+            width: 200px;
+            border-radius: 60%;
+            top:425px;
+            left:675px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="upper"></div>
+    <div class="lower"></div>
+</body>
+</html>
